@@ -1,10 +1,10 @@
 const repl = require("repl");
 
-function getRandomNumber (max) {
-   return Math.floor(1 + Math.random() * (+max + 1 - 1));
+function getRandomNumber(max = 100) {
+  return Math.floor(Math.random() * (+max + 1));
 }
 
-console.log(getRandomNumber(100));
+console.log(getRandomNumber());
 
 const replServer = repl.start();
 
