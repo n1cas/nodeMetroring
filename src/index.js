@@ -1,6 +1,9 @@
 const repl = require("repl");
 
 function getRandomNumber(max = 100) {
+  if(typeof max !== 'number' &&  isNaN(max)) {
+    return 'Invalid Value, please enter number!'
+  }
   return Math.floor(Math.random() * (+max + 1));
 }
 
