@@ -4,9 +4,10 @@
   "description": "Project developed during GMP node course.",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index",
-    "server": "nodemon src/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node task-1/index",
+    "server": "nodemon task-1/index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task-2": "node task-2-standard-library/app"
   },
   "directories": {
     "lib": "lib",
